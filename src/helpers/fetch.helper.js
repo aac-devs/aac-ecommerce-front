@@ -1,7 +1,7 @@
 const baseUrl = process.env.REACT_APP_API_URL;
 
-export const fetch = {
-  fetchData: (endpoint, data, method = "GET") => {
+export const fetchData = {
+  fetchData: async (endpoint, data, method = "GET") => {
     const url = `${baseUrl}/${endpoint}`;
     if (method === "GET") {
       return fetch(url);
